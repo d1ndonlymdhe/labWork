@@ -20,14 +20,12 @@ int main()
     }
     for (int i = 0; i < 3; i++)
     {
+        for (int j = 0; j < 3; j++)
         {
-            for (int j = 0; j < 3; j++)
+            matAns[i][j] = 0;
+            for (int k = 0; k < 3; k++)
             {
-                matAns[i][j] = 0;
-                for (int k = 0; k < 3; k++)
-                {
-                    matAns[i][j] += matA[i][k] * matB[k][j];
-                }
+                matAns[i][j] += matA[i][k] * matB[k][j];
             }
         }
     }
